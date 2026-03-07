@@ -1,7 +1,7 @@
 
 from helpers.texts.slugify import slugify
 
-def img_analysis(doc, output_path, edition):
+def img_analysis(doc, output_path):
     bacias = ['Bacia do Rio Branco', 'Bacia do Rio Negro','Bacia do Rio Marañon', 'Bacia do Rio Ucayali', 'Bacia do Rio Napo', 
     'Curso principal do Rio Amazonas (Peru)','Bacia do Rio Javari','Bacia do Rio Içá (Putumayo)','Bacia do Rio Jutaí','Bacia do Rio Juruá',
     'Bacia do Rio Japurá (Caquetá)','Bacia do Rio Tefé','Bacia do Rio Coari','Bacia do Rio Purus','Curso principal do Rio Solimões',
@@ -10,7 +10,7 @@ def img_analysis(doc, output_path, edition):
     'Bacia do Rio Tapajós','Bacias da margem esquerda do Rio Amazonas (noroeste do Pará)','Bacia do Rio Curuá Una','Bacias da margem esquerda do Rio Amazonas (nordeste do PA)',
     'Bacia do Rio Iriri','Bacia do Rio Xingu','Curso principal do Rio Amazonas (Brasil)']
     
-    path = f"{output_path}/{edition}/analysis"
+    path = f"{output_path}/analysis"
     images = []
     for b in bacias:
         slug_name = slugify(b)

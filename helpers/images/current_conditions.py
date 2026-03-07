@@ -1,9 +1,8 @@
 import pymupdf # type: ignore
 
-def img_current_conditions(doc, output_path, edition):
+def img_current_conditions(doc, output_path):
 
-    
-    path = f"{output_path}/{edition}/current_conditions/"
+    path = f"{output_path}/current_conditions/"
     page = doc.load_page(3)
     # maps
     d = page.get_text("dict")

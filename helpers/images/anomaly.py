@@ -1,8 +1,8 @@
 import pymupdf
 
-def img_anomaly(doc, output_path, edition):
+def img_anomaly(doc, output_path):
     c = 1
-    path = f"{output_path}/{edition}/anomaly"
+    path = f"{output_path}/anomaly"
     for p in range(19,23):
         page = doc.load_page(p)
         d = page.get_text("dict")

@@ -1,7 +1,7 @@
 import pymupdf
 
-def img_multimodel(doc, output_path, edition):
-    path = f"{output_path}/{edition}/multimodel"
+def img_multimodel(doc, output_path):
+    path = f"{output_path}/multimodel"
     page = doc.load_page(15)
     d = page.get_text("dict")
     blocks = d["blocks"] 
