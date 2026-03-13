@@ -32,5 +32,18 @@ def dict_classes(slugname, lang):
             "en": "very dry condition",
             "es": "muy seco"
         },
+         'chuvoso': {
+            "en": "rainy",
+            "es": "lluvioso"
+        },
+         'muito-chuvoso': {
+            "en": "ver rainy",
+            "es": "muy lluvioso"
+        },
+         'extremamente-chuvoso': {
+            "en": "extremely rainy",
+            "es": "extremadamente lluvioso"
+        }
+         
     }
     return d[slugname][lang]

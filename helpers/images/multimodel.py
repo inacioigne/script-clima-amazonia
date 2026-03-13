@@ -9,7 +9,6 @@ def img_multimodel(doc, output_path):
     for i in imgblocks:
         if i['height'] > 400:
             img = i
-            print(img)
             break
     left, top, right, bottom = img['bbox'] # type: ignore
     right += 100
@@ -27,7 +26,6 @@ def img_multimodel(doc, output_path):
     for i in imgblocks:
         if i['height'] > 400:
             img = i
-            print(img)
             break
     left, top, right, bottom = img['bbox'] # type: ignore
     right += 100
