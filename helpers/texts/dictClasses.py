@@ -25,8 +25,8 @@ def dict_classes(slugname, lang):
             "es": "tendiendo a muy seco"
         },
          'tendencia-a-seco': {
-            "en": "tendency to very dry contition",
-            "es": "tendency to dry condition"
+            "en": "tendency to dry contition",
+            "es": "tendiendo a seco"
         },
          'muito-seco': {
             "en": "very dry condition",
@@ -43,7 +43,17 @@ def dict_classes(slugname, lang):
          'extremamente-chuvoso': {
             "en": "extremely rainy",
             "es": "extremadamente lluvioso"
+        },
+         'tendencia-a-extremamente-chuvoso': {
+            "en": "tending to be extremely rainy",
+            "es": "tendencia a ser extremadamente lluvioso"
+        },
+         'extremamente-seco-ou-tendencia-a-extremamente-seco': {
+            "en": "extremely dry behavior or a tending to be extremely dry",
+            "es": "extremadamente seco o con tendencia a ser extremadamente seco"
         }
+         
+         
          
     }
     return d[slugname][lang]

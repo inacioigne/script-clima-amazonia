@@ -1,4 +1,4 @@
 .venv/
-/data/images/*
+/data/*
 pdfs
 __pycache__/
