@@ -1,0 +1,84 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" version="4.4.2"
+    xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+    <head>
+        <doi_batch_id>58684b4b38c108afd5afa32b</doi_batch_id>
+        <timestamp>20260416084630325</timestamp>
+        <depositor>
+            <depositor_name>1npa:1npa</depositor_name>
+            <email_address>inacioigne@gmail.com</email_address>
+        </depositor>
+        <registrant>WEB-FORM</registrant>
+    </head>
+    <body>
+        <journal>
+            <journal_metadata>
+                <full_title>Boletim de monitoramento climático de grandes bacias hidrográficas Bacia
+                    Amazônica</full_title>
+                <abbrev_title>BMCAMZPT</abbrev_title>
+                <issn media_type="electronic">29650291</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>04</month>
+                    <day>15</day>
+                    <year>2026</year>
+                </publication_date>
+                <journal_volume>
+                    <volume>06</volume>
+                </journal_volume>
+                <issue>15</issue>
+                <doi_data>
+                    <doi>10.61818/02910615</doi>
+                    <resource>https://climaamazonia.org/pt/2026/0415</resource>
+                </doi_data>
+            </journal_issue>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Boletín de monitoreo climático de las principales cuencas hidrográficas</full_title>
+                <abbrev_title>BMCAMZES</abbrev_title>
+                <issn media_type="electronic">29657709</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>04</month>
+                    <day>15</day>
+                    <year>2026</year>
+                </publication_date>
+                <journal_volume>
+                    <volume>04</volume>
+                </journal_volume>
+                <issue>15</issue>
+                <doi_data>
+                    <doi>10.61818/77090415</doi>
+                    <resource>https://climaamazonia.org/es/2026/0415</resource>
+                </doi_data>
+            </journal_issue>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Climate monitoring bulletin for the major river basins</full_title>
+                <abbrev_title>BMCAMZEN</abbrev_title>
+                <issn media_type="electronic">29657857</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>04</month>
+                    <day>15</day>
+                    <year>2026</year>
+                </publication_date>
+                <journal_volume>
+                    <volume>04</volume>
+                </journal_volume>
+                <issue>15</issue>
+                <doi_data>
+                    <doi>10.61818/78570415</doi>
+                    <resource>https://climaamazonia.org/en/2026/0415</resource>
+                </doi_data>
+            </journal_issue>
+        </journal>
+
+    </body>
+</doi_batch>

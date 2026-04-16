@@ -51,9 +51,10 @@ def dict_classes(slugname, lang):
          'extremamente-seco-ou-tendencia-a-extremamente-seco': {
             "en": "extremely dry behavior or a tending to be extremely dry",
             "es": "extremadamente seco o con tendencia a ser extremadamente seco"
+        },
+         'extremamente-seco': {
+            "en": "extremely dry",
+            "es": "extremadamente seco"
         }
-         
-         
-         
     }
     return d[slugname][lang]

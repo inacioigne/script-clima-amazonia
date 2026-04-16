@@ -1,10 +1,15 @@
 import pymupdf
+import json
 
-def get_text(pathPT, yyyy, mmdd):
+from lib.texts.getMeta import get_meta2024
+from lib.texts.getCurrentConditions import get_current_conditions
+from lib.texts.getAnalysis import get_analysis
+from lib.texts.getMultimodel import get_multimodel
+
+def get_text(pathPT, pathEN, pathES, yyyy, mmdd):
     bulletin_dict = {}
     doc = pymupdf.open(pathPT)
-    bulletin_dict = get_meta(doc, bulletin_dict)
-    # bulletin_dict = get_meta_2025(doc, bulletin_dict)    
+    bulletin_dict = get_meta2024(doc, bulletin_dict)
     bulletin_dict = get_current_conditions(pathPT, pathEN, pathES, bulletin_dict)
     bulletin_dict = get_analysis(doc, bulletin_dict)
     bulletin_dict = get_multimodel(pathPT, pathEN, pathES, bulletin_dict)
