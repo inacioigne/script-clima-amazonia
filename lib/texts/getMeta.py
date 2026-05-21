@@ -46,35 +46,32 @@ def date_to_es(date):
     date_es = f'{dia} de {mes_es} de {ano}'
     return date_es
 
-def get_meta2024(doc, bulletin_dict):
+def get_meta(doc, bulletin_dict):
     # Page 1
     page = doc.load_page(0)
     text = page.get_text()
-    padrao_numero = r"Número\s+(\d+)"
-    padrao_data = r"(\d{1,2}\s+de\s+[A-Za-zçãõáéíóúâêô]+\s+de\s+\d{4})"
-    match_numero = re.search(padrao_numero, text, re.IGNORECASE)
-    match_data = re.search(padrao_data, text, re.IGNORECASE)
-    number = match_numero.group(1) # type: ignore
-    date = match_data.group(1) # type: ignore
+    text_lines = text.splitlines()
+    number = text_lines[-1].split()[3]
+    date = " ".join(text_lines[-1].split()[5:])
 
     meta = {
         "meta": {
         "pt": {
-            "doi": f'10.61818/029104{number}',
+            "doi": f'10.61818/029106{number}',
             "issn": "2965-0291",
-            "volume": "04",
+            "volume": "06",
             "date": date
         },
         "en": {
-            "doi": f'10.61818/785702{number}',
+            "doi": f'10.61818/785704{number}',
             "issn": "2965-7857",
-            "volume": "02",
+            "volume": "04",
             "date": date_to_en(date)
         },
         "es": {
-            "doi": f'10.61818/770902{number}',
+            "doi": f'10.61818/770904{number}',
             "issn": "2965-7709",
-            "volume": "02",
+            "volume": "04",
             "date": date_to_es(date)
         },
          "number": number
@@ -82,3 +79,40 @@ def get_meta2024(doc, bulletin_dict):
         }
     bulletin_dict.update(meta)
     return bulletin_dict
+
+# def get_meta2024(doc, bulletin_dict):
+#     # Page 1
+#     page = doc.load_page(0)
+#     text = page.get_text()
+#     padrao_numero = r"Número\s+(\d+)"
+#     padrao_data = r"(\d{1,2}\s+de\s+[A-Za-zçãõáéíóúâêô]+\s+de\s+\d{4})"
+#     match_numero = re.search(padrao_numero, text, re.IGNORECASE)
+#     match_data = re.search(padrao_data, text, re.IGNORECASE)
+#     number = match_numero.group(1) # type: ignore
+#     date = match_data.group(1) # type: ignore
+
+#     meta = {
+#         "meta": {
+#         "pt": {
+#             "doi": f'10.61818/029104{number}',
+#             "issn": "2965-0291",
+#             "volume": "04",
+#             "date": date
+#         },
+#         "en": {
+#             "doi": f'10.61818/785702{number}',
+#             "issn": "2965-7857",
+#             "volume": "02",
+#             "date": date_to_en(date)
+#         },
+#         "es": {
+#             "doi": f'10.61818/770902{number}',
+#             "issn": "2965-7709",
+#             "volume": "02",
+#             "date": date_to_es(date)
+#         },
+#          "number": number
+#     }
+#         }
+#     bulletin_dict.update(meta)
+#     return bulletin_dict
