@@ -9,7 +9,7 @@ def img_multimodel(doc, output_path):
     # path = f"{output_path}/multimodel"
     path = Path(output_path, "multimodel")
     path.mkdir(parents=True, exist_ok=True)
-    page = doc.load_page(15)
+    page = doc.load_page(16)
     d = page.get_text("dict")
     blocks = d["blocks"] 
     imgblocks = [b for b in blocks if b["type"] == 1]
@@ -35,7 +35,7 @@ def img_multimodel(doc, output_path):
     # pix.save(f'{path}/seven_days.png')
     
     # fourteen_days
-    page = doc.load_page(16)
+    page = doc.load_page(17)
     d = page.get_text("dict")
     blocks = d["blocks"] 
     imgblocks = [b for b in blocks if b["type"] == 1]

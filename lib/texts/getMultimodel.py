@@ -9,7 +9,7 @@ def get_multimodel(pathPT, pathEN, pathES, bulletin_dict):
     }
     # pt
     doc = pymupdf.open(pathPT)
-    page = doc.load_page(15)
+    page = doc.load_page(16)
     blocks = page.get_text("blocks")
     for x0, y0, x1, y1, text, *_ in blocks:
         if "A Figura acima," in text:
@@ -17,7 +17,7 @@ def get_multimodel(pathPT, pathEN, pathES, bulletin_dict):
             seven_days = seven_days.replace("acima, ", "")
             multimodel['pt']['seven_days'] = seven_days
             break
-    page = doc.load_page(16)
+    page = doc.load_page(17)
     blocks = page.get_text("blocks")
     for x0, y0, x1, y1, text, *_ in blocks:
         if "A Figura acima," in text:
@@ -27,7 +27,7 @@ def get_multimodel(pathPT, pathEN, pathES, bulletin_dict):
             break
     # en
     doc = pymupdf.open(pathEN)
-    page = doc.load_page(15)
+    page = doc.load_page(16)
     blocks = page.get_text("blocks")
     for x0, y0, x1, y1, text, *_ in blocks:
         text = re.sub(r'\s+', ' ', text).strip()
@@ -36,7 +36,7 @@ def get_multimodel(pathPT, pathEN, pathES, bulletin_dict):
             seven_days = seven_days.replace("above ", "")
             multimodel['en']['seven_days'] = seven_days
             break
-    page = doc.load_page(16)
+    page = doc.load_page(17)
     blocks = page.get_text("blocks")
     for x0, y0, x1, y1, text, *_ in blocks:
         text = re.sub(r'\s+', ' ', text).strip()
@@ -47,7 +47,7 @@ def get_multimodel(pathPT, pathEN, pathES, bulletin_dict):
             break
     # es
     doc = pymupdf.open(pathES)
-    page = doc.load_page(15)
+    page = doc.load_page(16)
     blocks = page.get_text("blocks")
     for x0, y0, x1, y1, text, *_ in blocks:
         text = re.sub(r'\s+', ' ', text).strip()
@@ -56,7 +56,7 @@ def get_multimodel(pathPT, pathEN, pathES, bulletin_dict):
             seven_days = seven_days.replace("de arriba ", "")
             multimodel['es']['seven_days'] = seven_days
             break
-    page = doc.load_page(16)
+    page = doc.load_page(17)
     blocks = page.get_text("blocks")
     for x0, y0, x1, y1, text, *_ in blocks:
         text = re.sub(r'\s+', ' ', text).strip()

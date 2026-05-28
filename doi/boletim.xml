@@ -22,16 +22,16 @@
             <journal_issue>
                 <publication_date media_type="online">
                     <month>05</month>
-                    <day>20</day>
+                    <day>27</day>
                     <year>2026</year>
                 </publication_date>
                 <journal_volume>
                     <volume>06</volume>
                 </journal_volume>
-                <issue>20</issue>
+                <issue>21</issue>
                 <doi_data>
-                    <doi>10.61818/02910620</doi>
-                    <resource>https://climaamazonia.org/pt/2026/0520</resource>
+                    <doi>10.61818/02910621</doi>
+                    <resource>https://climaamazonia.org/pt/2026/0527</resource>
                 </doi_data>
             </journal_issue>
         </journal>
@@ -44,16 +44,16 @@
             <journal_issue>
                 <publication_date media_type="online">
                     <month>05</month>
-                    <day>20</day>
+                    <day>27</day>
                     <year>2026</year>
                 </publication_date>
                 <journal_volume>
                     <volume>04</volume>
                 </journal_volume>
-                <issue>20</issue>
+                <issue>21</issue>
                 <doi_data>
-                    <doi>10.61818/77090420</doi>
-                    <resource>https://climaamazonia.org/es/2026/0520</resource>
+                    <doi>10.61818/77090421</doi>
+                    <resource>https://climaamazonia.org/es/2026/0527</resource>
                 </doi_data>
             </journal_issue>
         </journal>
@@ -66,19 +66,20 @@
             <journal_issue>
                 <publication_date media_type="online">
                     <month>05</month>
-                    <day>20</day>
+                    <day>27</day>
                     <year>2026</year>
                 </publication_date>
                 <journal_volume>
                     <volume>04</volume>
                 </journal_volume>
-                <issue>20</issue>
+                <issue>21</issue>
                 <doi_data>
-                    <doi>10.61818/78570420</doi>
-                    <resource>https://climaamazonia.org/en/2026/0520</resource>
+                    <doi>10.61818/78570421</doi>
+                    <resource>https://climaamazonia.org/en/2026/0527</resource>
                 </doi_data>
             </journal_issue>
         </journal>
+
 
     </body>
 </doi_batch>

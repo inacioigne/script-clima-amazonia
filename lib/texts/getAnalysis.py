@@ -14,7 +14,7 @@ def get_analysis(doc, bulletin_dict):
 'Bacia do Rio Tapajós','Bacias da margem esquerda do Rio Amazonas (noroeste do Pará)','Bacia do Rio Curuá Una','Bacias da margem esquerda do Rio Amazonas (nordeste do PA)',
 'Bacia do Rio Iriri','Bacia do Rio Xingu','Curso principal do Rio Amazonas (Brasil)']
     analysis = []
-    texts = [doc.load_page(pg).get_text() for pg in range(4,15)]
+    texts = [doc.load_page(pg).get_text() for pg in range(5,16)]
     text = " ".join(texts)
     text = re.sub(r"\s*\n\s*", " ", text)
     text = re.sub(r"\s{2,}", " ", text).strip()

@@ -171,7 +171,7 @@ def get_images(pathPT, mmdd):
     img_multimodel(doc, output_path)
     img_reference(doc, output_path)
     img_categorization(doc, output_path)
-    img_anomaly(doc, output_path)
+    # img_anomaly(doc, output_path)
 
 def main():
     mmdd = sys.argv[1] 
